@@ -43,3 +43,6 @@ then we can introduce the update rule
 which the paper shows allows us to only $\(O\left( \frac{d^{3}}{\sqrt{\delta}} \right)\)$ in order to have the total variation between the predicted distribution and the data distribution to have $\(TV(q,p)\leq \delta\)$ for sufficiently small $\(\delta\)$, which improves the convergence rate from the previous $\(O\left( \frac{1}{\delta} \right)\)$. This is the improvement we attempt to implement in order to improve the accuracy with respect to the number of epochs.
 
 Our current approach consists of training the extra objective through another network and passing the results onto the original network, which is not entirely efficient unless the networks can be trained parallel to each other. Currently working on finding a more efficient way to implement the results.
+
+--------------------------
+Try running ddpm_conditional.py
